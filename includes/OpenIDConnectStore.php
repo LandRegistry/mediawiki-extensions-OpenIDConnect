@@ -116,7 +116,7 @@ class OpenIDConnectStore {
 	 */
 	public function getMigratedIdByEmail( string $email ): array {
 		$dbr = wfGetDB( DB_REPLICA );
-		$emailLower = strtolower($email)
+		$emailLower = strtolower($email);
 		$row = $dbr->selectRow(
 			[
 				'user',
